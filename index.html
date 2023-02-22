@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main>
+      <h1>Luigi's Restaurant - Customer Satisfaction Survey</h1>
+      <form action="/survey-results">
+        <section>
+          <label for="username">Please introduce your name:</label> <br />
+          <input type="text" id="username" name="username" />
+        </section>
+        <section>
+          <label for="email">Please introduce your e-mail</label> <br />
+          <input type="email" id="email" />
+        </section>
+        <section>
+          <label for="phone">Introduce your phone number</label> <br />
+          <input type="number" name="phone" id="phone" />
+        </section>
+        <section>
+          Please select the ubication of the restaurant you went <br />
+          <label for="merida">Merida</label
+          ><input id="merida" type="radio" name="ubication" value="merida" />
+          <label for="progreso">Progreso</label>
+          <input id="progreso" type="radio" name="ubication" value="progreso" />
+        </section>
+        <section>
+          <label for="experience"
+            >Select the opction that describe better your experience</label
+          >
+          <select name="experience" id="experience">
+            <option value="bad">Bad</option>
+            <option value="regular">Regular</option>
+            <option value="good" selected>Good</option>
+          </select>
+        </section>
+        <section>
+          <label for="feedback">Any feedback, sugestions or comments?</label>
+          <br />
+          <textarea name="feedback" id="feedback" cols="30" rows="8">
+          </textarea>
+        </section>
+        <p>
+          <label for="checked"
+            >Would you like to do another survey in the future?</label
+          ><input type="checkbox" name="checked" id="checked" checked />
+        </p>
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
